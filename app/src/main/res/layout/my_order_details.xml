@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:text="Accept"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_16sdp" />
+
+
+    <CheckBox
+        android:id="@+id/terms_con_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:text="Accept Terms And Condition " />
+
+
+    <LinearLayout
+        android:id="@+id/cancele_description_linar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Describe the region ."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <EditText
+            android:id="@+id/edit_regioun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/edittext_backg"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_for_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/accept"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#21253d"
+            android:backgroundTint="#21253d"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:neumorph_backgroundColor="@color/green"
+            app:neumorph_shadowColorDark="@color/white"
+            app:neumorph_shadowColorLight="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/track"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#21253d"
+            android:backgroundTint="#21253d"
+            android:gravity="center_horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:neumorph_backgroundColor="@color/quantum_yellow"
+            app:neumorph_shadowColorDark="@color/white"
+            app:neumorph_shadowColorLight="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Track"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cancle"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#21253d"
+        android:backgroundTint="#21253d"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:neumorph_backgroundColor="#d72675"
+        app:neumorph_shadowColorDark="@color/white"
+        app:neumorph_shadowColorLight="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/canceled"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#21253d"
+        android:backgroundTint="#21253d"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:neumorph_backgroundColor="#F3B4D0"
+        app:neumorph_shadowColorDark="@color/white"
+        app:neumorph_shadowColorLight="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancelled"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/assign_delivery_boy"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#21253d"
+        android:visibility="gone"
+        android:backgroundTint="#21253d"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:neumorph_backgroundColor="@color/teal_200"
+        app:neumorph_shadowColorDark="@color/white"
+        app:neumorph_shadowColorLight="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Assign Delivery Boy "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+</LinearLayout>

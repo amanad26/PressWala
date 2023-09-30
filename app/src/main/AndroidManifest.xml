@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.abmtech.presswala">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PressWala"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.UpdateDeliveryBoyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ChooseDeliveryBoyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DeliveryBoyAccountListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.DeliveryBoyHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.UserProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.MyProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.AddProductActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activity.AddQuantitiesPresssActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DeliveryBoySignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AdminEditPriceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AdminHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CalculationFinalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TrackOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderPlacedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AddQuantitiesDryCleanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.abmtech.presswala.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

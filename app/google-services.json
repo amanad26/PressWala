@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "121754192519",
+    "project_id": "presswala-bb389",
+    "storage_bucket": "presswala-bb389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121754192519:android:6aaa5c2e0d9c0efba30622",
+        "android_client_info": {
+          "package_name": "com.abmtech.presswala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121754192519-29hsacugm0qngaqpfs21tq5dekv2l4nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abmtech.presswala",
+            "certificate_hash": "6ced05644c480575e449387637040f740f73efb5"
+          }
+        },
+        {
+          "client_id": "121754192519-9m0meg8lsdqjfvcdp6l5d8q49st4pmpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTmGmobEpbo8F1VAJAEGVN42ZbM0Z8SBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121754192519-9m0meg8lsdqjfvcdp6l5d8q49st4pmpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
